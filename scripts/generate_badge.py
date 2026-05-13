@@ -1,0 +1,100 @@
+import requests
+import re
+import sys
+
+def get_view_count(username):
+    url = f"https://komarev.com/ghpvc/?username={username}&style=flat"
+    r = requests.get(url, timeout=10)
+    numbers = re.findall(r'<text[^>]*>(\d+)</text>', r.text)
+    return numbers[-1] if numbers else "0"
+
+def generate_glass_svg(count):
+    return f'''<svg width="230" height="58" viewBox="0 0 230 58" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a5c" stop-opacity="0.97"/>
+      <stop offset="100%" stop-color="#091728" stop-opacity="0.99"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="white" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="border" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="count_glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft_glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer glow halo -->
+  <rect x="8" y="8" width="214" height="42" rx="11"
+        fill="#38bdf8" fill-opacity="0.07" filter="url(#soft_glow)"/>
+
+  <!-- Glass body -->
+  <rect x="1" y="1" width="228" height="56" rx="13" fill="url(#bg)"/>
+
+  <!-- Top shine -->
+  <rect x="1" y="1" width="228" height="32" rx="13" fill="url(#shine)"/>
+
+  <!-- Bottom inner edge highlight -->
+  <rect x="14" y="50" width="202" height="1" rx="0.5"
+        fill="white" fill-opacity="0.06"/>
+
+  <!-- Glowing border -->
+  <rect x="0.75" y="0.75" width="228.5" height="56.5" rx="13.25"
+        fill="none" stroke="url(#border)" stroke-width="1.5"/>
+
+  <!-- Eye icon -->
+  <g transform="translate(15, 19)" fill="none" stroke="#7dd3fc"
+     stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.95">
+    <path d="M0 10 C5 2.5, 15 2.5, 20 10 C15 17.5, 5 17.5, 0 10Z"/>
+    <circle cx="10" cy="10" r="3.8" fill="#38bdf8" fill-opacity="0.25"/>
+    <circle cx="10" cy="10" r="3.8"/>
+    <circle cx="10" cy="10" r="1.4" fill="#7dd3fc" stroke="none"/>
+  </g>
+
+  <!-- "Profile views" label -->
+  <text x="46" y="36"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="13.5" fill="rgba(226,240,255,0.82)" letter-spacing="0.4">
+    Profile views
+  </text>
+
+  <!-- Vertical divider -->
+  <rect x="156" y="13" width="1" height="32" rx="0.5"
+        fill="rgba(125,211,252,0.2)"/>
+
+  <!-- Count with glow -->
+  <text x="193" y="37"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="21" font-weight="700" fill="url(#count_glow)"
+        text-anchor="middle" filter="url(#glow)" letter-spacing="1">
+    {count}
+  </text>
+</svg>'''
+
+if __name__ == "__main__":
+    username = sys.argv[1] if len(sys.argv) > 1 else "Cookie-Cat21"
+    count = get_view_count(username)
+    svg = generate_glass_svg(count)
+    with open("profile-views-badge.svg", "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"Generated glass badge with count: {count}")
