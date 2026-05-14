@@ -10,8 +10,6 @@ Full Stack Engineer & Data Analytics student based in Sri Lanka. I build data-dr
 
 [![Skills](https://skillicons.dev/icons?i=python,typescript,react,fastapi,postgres,kafka,docker,git,vercel,vscode&theme=dark)](https://skillicons.dev)
 
-![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
-
 ---
 
 ### Featured Projects
