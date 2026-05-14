@@ -8,7 +8,7 @@ Full Stack Engineer & Data Analytics student based in Sri Lanka. I build data-dr
 
 ### Tech Stack
 
-[![Skills](https://skillicons.dev/icons?i=python,typescript,js,react,nextjs,tailwind,fastapi,ruby,dotnet,postgres,mysql,redis,supabase,kafka,docker,gcp,git,vercel,npm,notion,pycharm,sublime,vscode,ps,latex&theme=dark)](https://skillicons.dev)
+[![Skills](https://skillicons.dev/icons?i=python,typescript,js,react,nextjs,tailwind,fastapi,ruby,cs,dotnet,postgres,mysql,redis,supabase,kafka,docker,gcp,aws,cloudflare,git,vercel,npm,notion,pycharm,sublime,vscode,ps,latex&theme=dark)](https://skillicons.dev)
 
 ---
 
