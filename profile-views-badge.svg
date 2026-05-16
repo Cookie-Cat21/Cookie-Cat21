@@ -76,6 +76,6 @@
         font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
         font-size="21" font-weight="700" fill="url(#count_glow)"
         text-anchor="middle" filter="url(#glow)" letter-spacing="1">
-    72
+    75
   </text>
 </svg>
