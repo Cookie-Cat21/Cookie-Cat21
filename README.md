@@ -58,11 +58,11 @@ I also maintain a set of reverse-engineered Sri Lanka API notes (banks, utilitie
 
 ---
 
-### Stack I actually use
+### Stack
 
-`Python` · `SQL` · `Java` · `TypeScript`  
-`Kafka` · `Flink` · `Spark` · `Iceberg` / `Delta` · `dbt` · `Airflow`  
-`PostgreSQL` · `Docker` · `Terraform` · `GitHub Actions` · `FastAPI`
+**Data:** `Python` · `SQL` · `Java` · `Kafka` · `Flink` · `Spark` · `Iceberg` / `Delta` · `dbt` · `Airflow` · `PostgreSQL` · `Redis`  
+**Serve / product:** `TypeScript` · `FastAPI` · `React` · `Next.js` · `Playwright`  
+**Ops:** `Docker` · `Terraform` · `GitHub Actions` · `AWS` · `Azure`
 
 ---
 
