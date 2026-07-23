@@ -8,9 +8,7 @@ Looking for **Data Engineering** roles where I can own pipelines end-to-end: ext
 
 ---
 
-### Featured work
-
-Only three projects. Everything else is noise.
+### Flagship projects
 
 #### 1. [PropertyLK](https://github.com/ArdenoStudio/sri-lanka-property-price-intelligence-platform) · [live](https://propertylk-one.vercel.app)
 
