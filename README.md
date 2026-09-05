@@ -8,9 +8,7 @@ Looking for **Data Engineering** roles where I can own pipelines end-to-end: ext
 
 ---
 
-### Featured work
-
-Only three projects. Everything else is noise.
+### Flagship projects
 
 #### 1. [PropertyLK](https://github.com/ArdenoStudio/sri-lanka-property-price-intelligence-platform) · [live](https://propertylk-one.vercel.app)
 
@@ -60,11 +58,11 @@ I also maintain a set of reverse-engineered Sri Lanka API notes (banks, utilitie
 
 ---
 
-### Stack I actually use
+### Stack
 
-`Python` · `SQL` · `Java` · `TypeScript`  
-`Kafka` · `Flink` · `Spark` · `Iceberg` / `Delta` · `dbt` · `Airflow`  
-`PostgreSQL` · `Docker` · `Terraform` · `GitHub Actions` · `FastAPI`
+**Data:** `Python` · `SQL` · `Java` · `Kafka` · `Flink` · `Spark` · `Iceberg` / `Delta` · `dbt` · `Airflow` · `PostgreSQL` · `Redis`  
+**Serve / product:** `TypeScript` · `FastAPI` · `React` · `Next.js` · `Playwright`  
+**Ops:** `Docker` · `Terraform` · `GitHub Actions` · `AWS` · `Azure`
 
 ---
 
