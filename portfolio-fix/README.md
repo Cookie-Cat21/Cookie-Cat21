@@ -14,7 +14,8 @@ If you merge PR #1 to update `README.md`, either:
 
 | Priority | File | Repo |
 |---|---|---|
-| P0 | [`01-vega.md`](./01-vega.md) | `Cookie-Cat21/Vega` |
+| P0 | [`09-vega-ride-or-die.md`](./09-vega-ride-or-die.md) | **Vega detox + DE credibility (use this)** |
+| P0 | [`01-vega.md`](./01-vega.md) | Vega lighter pass (superseded by 09) |
 | P0 | [`02-propertylk.md`](./02-propertylk.md) | `ArdenoStudio/sri-lanka-property-price-intelligence-platform` |
 | P0 | [`03-octane.md`](./03-octane.md) | `ArdenoStudio/octane` |
 | P1 | [`04-dataflow.md`](./04-dataflow.md) | `Cookie-Cat21/Data-flow` |
