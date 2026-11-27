@@ -15,7 +15,8 @@ If you merge PR #1 to update `README.md`, either:
 | Priority | File | Repo |
 |---|---|---|
 | P0 | [`01-vega.md`](./01-vega.md) | `Cookie-Cat21/Vega` |
-| P0 | [`02-propertylk.md`](./02-propertylk.md) | `ArdenoStudio/sri-lanka-property-price-intelligence-platform` |
+| P0 | [`09-propertylk-ride-or-die.md`](./09-propertylk-ride-or-die.md) | **PropertyLK ride-or-die flagship harden** |
+| P0 | [`02-propertylk.md`](./02-propertylk.md) | PropertyLK lighter README pass (superseded by 09) |
 | P0 | [`03-octane.md`](./03-octane.md) | `ArdenoStudio/octane` |
 | P1 | [`04-dataflow.md`](./04-dataflow.md) | `Cookie-Cat21/Data-flow` |
 | P1 | [`07-cse-api-docs.md`](./07-cse-api-docs.md) | `Cookie-Cat21/cse-api-docs` |
